@@ -15,9 +15,11 @@ function App() {
 
   };
 
-  let dtStyle ={
-    fontSize: 20,
-    color: 'white'
+  let tStyle ={
+    fontSize: 80,
+    fontFamily: "'Oswald', sans-serif",
+    color: 'white',
+    letterSpacing: 2
   }
 
 
@@ -28,6 +30,16 @@ function App() {
     textAlign: 'center'
   }
 
+  let dtBG = {
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    width: 500,
+    height:300,
+    margin: '0 auto',
+    textAlign: 'center',
+    marginTop: '10%',
+    borderRadius: '70%'
+
+  }
 
   return (
     //date
@@ -36,10 +48,10 @@ function App() {
    
     <>
      
-      <div className='dateTime'>
-        <><Moment style={dtStyle} className='date' format='LL' interval={1000} fromNow></Moment>
+      <div className='dateTime' style={{textAlign:'center'}}>
+        <><Moment className='date' format='LL' interval={1000} fromNow></Moment>
           <><br></br></>
-          <Moment style={dtStyle} className='time' format='LT' interval={1000} fromNow></Moment></>
+          <Moment style={tStyle} className='time' format='LT' interval={1000} fromNow></Moment></>
 
       </div>
       
