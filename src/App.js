@@ -1,10 +1,10 @@
 import './App.css';
 import Moment from 'react-moment';
 import moment from 'moment';
+import React, { useState, useEffect } from 'react';
 
 
 
-//tm.jpg
 function App() {
 
 
@@ -16,41 +16,21 @@ function App() {
   };
 
 
-  // var { currentDate, time } = TimeDate();
-
-
   return (
     //date
     //time
     //qoute in transparent rectangle
    
     <div >
-     
-      
-       <Moment format='LL'></Moment><><br></br></>
-       <Moment format='LTS'></Moment>
-      
+        <><Moment style={fontStyle} className='date' format='LL' interval={1000} fromNow></Moment>
+        <><br></br></>
+        <Moment style={fontStyle} className='time'format='LT' interval={1000} fromNow></Moment></>
+       
     </div>
 
 
 
   );
-
-
-
-
-  
-
-  function TimeDate() {
-    var date = moment();
-    var currentDate = date.format("LL");
-
-    var time = date.format("LTS");
-    
-    return (
-       <><p style={fontStyle}>{currentDate}</p><p style={fontStyle}>{time}</p></>);
-  }
-
 
 
 }
