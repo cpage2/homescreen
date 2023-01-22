@@ -10,7 +10,7 @@ function App() {
 
   //style for fonts
   let fontStyle ={
-    fontSize: 12,
+    fontSize: 16,
     color: 'white'
 
   };
@@ -22,7 +22,10 @@ function App() {
 
 
   let divBG ={
-    backgroundColor: 'rgba(0, 0, 0, 0.4)'
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    width: '50%',
+    margin: '0 auto',
+    textAlign: 'center'
   }
 
 
