@@ -15,30 +15,11 @@ function App() {
 
   };
 
-  let tStyle ={
-    fontSize: 80,
-    fontFamily: "'Oswald', sans-serif",
-    color: 'white',
-    letterSpacing: 2
-  }
+  
 
-
-  let divBG ={
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    width: '50%',
-    margin: '0 auto',
-    textAlign: 'center'
-  }
-
-  let dtBG = {
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    width: 500,
-    height:300,
-    margin: '0 auto',
-    textAlign: 'center',
-    marginTop: '10%',
-    borderRadius: '70%'
-
+  let aStyle = {
+    color:'white',
+    textDecoration: 'none'
   }
 
   return (
@@ -48,21 +29,21 @@ function App() {
    
     <>
      
-      <div className='dateTime' style={{textAlign:'center'}}>
-        <><Moment className='date' format='LL' interval={1000} fromNow></Moment>
+      <div className='dateTime'>
+        <><Moment id='date' format='LL' interval={1000} fromNow></Moment>
           <><br></br></>
-          <Moment style={tStyle} className='time' format='LT' interval={1000} fromNow></Moment></>
+          <Moment  id='time' format='LT' interval={1000} fromNow></Moment></>
 
       </div>
       
       
-      <div className='qouteBox' style={divBG}>
+      <div className='qouteBox'>
           <p id='qoute' style={fontStyle}>“I hope that you never cower from your dark chapters, but highlight them as proof of perseverance, endurance, and strength.”<br></br>
             ― Kierra C.T. Banks</p>
       
       </div>
       
-      <footer><p id='credit' style={fontStyle}>Photo by <a href="https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Takashi Miyazaki</a> on <a href="https://unsplash.com/photos/4VELvD-vdVg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></footer>
+      <footer style = {{textAlign:'center'}}><p id='credit' style={fontStyle}>Photo by <a style={aStyle} href="https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Takashi Miyazaki</a> on <a style={aStyle} href="https://unsplash.com/photos/4VELvD-vdVg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></footer>
       </>
 
 
