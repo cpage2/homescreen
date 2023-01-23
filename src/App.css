@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
 
 #credit > a:hover{
@@ -10,13 +10,13 @@
 .dateTime{
  
     text-align:center;
-    margin-top: 15%;
+    margin-top: 12%;
     margin-bottom: 7%;
   
 }
 
 #date{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Oswald', sans-serif;
     color: white;
     letter-spacing: 5px;
@@ -25,11 +25,11 @@
 }
 
 #time{
-    font-size: 120px;
+    font-size: 125px;
     font-family: 'Oswald', sans-serif;
     color: white;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .qouteBox{
@@ -37,6 +37,38 @@
   width: 40%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 5px;
+}
+
+footer{
+  position:fixed;
+width: 100%;
+bottom: 0;
+text-align: center;
+}
+
+
+
+
+@media (max-width: 700px) {
+  #qoute {
+    font-size: 10px !important;
+   
+  }
+
+  .qouteBox{
+    width: 60%;
+    margin-top: 20%;
+  }
+
+  #time{
+    font-size: 100px;
+  }
+}
+
+@media(max-height: 500px){
+  footer{
+    position: relative;
+    margin-top: 10% !important;
+  }
 }

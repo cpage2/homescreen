@@ -10,7 +10,7 @@ function App() {
 
   //style for fonts
   let fontStyle ={
-    fontSize: 16,
+    fontSize: 12,
     color: 'white'
 
   };
@@ -43,7 +43,7 @@ function App() {
       
       </div>
       
-      <footer style = {{textAlign:'center'}}><p id='credit' style={fontStyle}>Photo by <a style={aStyle} href="https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Takashi Miyazaki</a> on <a style={aStyle} href="https://unsplash.com/photos/4VELvD-vdVg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></footer>
+      <footer ><p id='credit' style={fontStyle}>Photo by <a style={aStyle} href="https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Takashi Miyazaki</a> on <a style={aStyle} href="https://unsplash.com/photos/4VELvD-vdVg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></footer>
       </>
 
 
