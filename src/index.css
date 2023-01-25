@@ -50,20 +50,20 @@ code {
 
 
 @media (min-width: 800px) and (max-width: 1100px) {
-  body {
+  body, .midDay, .morning, .night, .sunset, .sunsrise {
     background-size: 220%;
     background-position:80% 0%;
   }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-  body {
+  body, .midDay, .morning, .night, .sunset, .sunsrise  {
     background-size: 250% !important;
     background-position:70% 0%;
   }
 }
 @media (min-width: 100px) and (max-width: 500px) {
-  body {
+  body, .midDay, .morning, .night, .sunset, .sunsrise  {
     background-size: 370% !important;
     background-position:72% 0%;
   }

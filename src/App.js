@@ -44,7 +44,7 @@ function App() {
    
     setBgImg(() => {
       getHour();
-      
+    //need to return different credits  
       if((hour > 5) && (hour <= 7)){
 
         return{classList:"sunrise"};
