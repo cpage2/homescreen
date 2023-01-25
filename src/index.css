@@ -5,10 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('wallpaper.jpg');
+  background-image: url('images/wallpaper.jpg');
   background-size:105%;
   background-repeat: no-repeat;
 
+}
+
+.sunsrise{
+  background-image: url('images/sunrise.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+
+}
+.morning{
+  background-image: url('images/eggs.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+}
+
+.midDay{
+  background-image: url('images/day.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+
+}
+
+.sunset{
+  background-image: url('images/wallpaper.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+
+}
+
+.night{
+  background-image: url('images/campfire.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -18,20 +50,20 @@ code {
 
 
 @media (min-width: 800px) and (max-width: 1100px) {
-  body {
+  body, .midDay, .morning, .night, .sunset, .sunsrise {
     background-size: 220%;
     background-position:80% 0%;
   }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-  body {
+  body, .midDay, .morning, .night, .sunset, .sunsrise  {
     background-size: 250% !important;
     background-position:70% 0%;
   }
 }
 @media (min-width: 100px) and (max-width: 500px) {
-  body {
+  body, .midDay, .morning, .night, .sunset, .sunsrise  {
     background-size: 370% !important;
     background-position:72% 0%;
   }
