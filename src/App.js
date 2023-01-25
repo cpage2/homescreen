@@ -73,6 +73,9 @@ function App() {
     
   }, [bgImg.classList]);
 
+
+  
+
   return (
     //date
     //time
