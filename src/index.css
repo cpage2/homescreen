@@ -5,10 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('wallpaper.jpg');
+  background-image: url('images/wallpaper.jpg');
   background-size:105%;
   background-repeat: no-repeat;
 
+}
+
+.sunsrise{
+  background-image: url('images/sunrise.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+
+}
+.morning{
+  background-image: url('images/eggs.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+}
+
+.midDay{
+  background-image: url('images/day.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+
+}
+
+.sunset{
+  background-image: url('images/wallpaper.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
+
+}
+
+.night{
+  background-image: url('images/campfire.jpg');
+  background-size:105%;
+  background-repeat: no-repeat;
 }
 
 code {
