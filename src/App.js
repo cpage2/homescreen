@@ -24,7 +24,7 @@ function App() {
   }
 
   const [bgImg, setBgImg] = useState({
-    classList: ""
+    classList: "campfire"
   });
 
 
@@ -67,7 +67,7 @@ function App() {
      
     })
    
-    console.log(bgImg.classList);
+   
 
     document.body.classList.add(bgImg.classList);
     
