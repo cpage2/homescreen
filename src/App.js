@@ -43,19 +43,21 @@ function App() {
    
    
     setBgImg(() => {
-      getHour();
+     getHour();
+      
     //need to return different credits  
       if((hour > 5) && (hour <= 7)){
 
         return{classList:"sunrise"};
       
       }else if ((hour > 7) && (hour <=10))  {
+
         return { classList: "morning"};
       
-      } else if((hour >10) && (hour <= 17)){
+      } else if((hour > 10) && (hour <= 16)){
         return { classList: "midDay"};
       
-      } else if((hour > 17) && (hour <= 19)){
+      } else if((hour > 16) && (hour <= 19)){
         return { classList: "sunsest" };
       
       }else{
