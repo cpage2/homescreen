@@ -24,7 +24,10 @@ function App() {
   }
 
   const [bgImg, setBgImg] = useState({
-    classList: "campfire"
+    classList: "campfire",
+    creditName: "name",
+    creditLink: 'empty'
+    
   });
 
 
@@ -48,20 +51,20 @@ function App() {
     //need to return different credits  
       if((hour > 5) && (hour <= 7)){
 
-        return{classList:"sunrise"};
+        return{classList:"sunrise", creditName:"Bailey Zindel", creditLink:"https://unsplash.com/photos/NRQV-hBF10M"};
       
       }else if ((hour > 7) && (hour <=10))  {
 
-        return { classList: "morning"};
+        return { classList: "morning", creditName:"Carolyn Page", creditLink:"#"};
       
       } else if((hour > 10) && (hour <= 16)){
-        return { classList: "midDay"};
+        return { classList: "midDay", creditName:"Carolyn Page", creditLink:"#"};
       
       } else if((hour > 16) && (hour <= 19)){
-        return { classList: "sunsest" };
+        return {classList: "sunsest" , creditName:"Takashi Miyazaki", creditLink:"https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"};
       
       }else{
-        return {classList:"night"}
+        return {classList:"night", creditName:"Farid Askerov", creditLink:"https://unsplash.com/photos/cX6ra6dCtAM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"}
       }
 
       
@@ -87,9 +90,9 @@ function App() {
       
       
       <div className='dateTime'>
-        <><Moment id='date' format='LL' interval={1000} fromNow></Moment>
+        <><Moment className='date' format='LL' interval={1000} fromNow></Moment>
           <><br></br></>
-          <Moment  id='time' format='LT' interval={1000} fromNow></Moment></>
+          <Moment  className ='time' format='LT' interval={1000} fromNow></Moment></>
 
       </div>
       
@@ -101,8 +104,8 @@ function App() {
       </div>
       
       <footer ><p id='credit' style={fontStyle}>Photo by 
-       <a style = {aStyle} href ="https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"  target="_blank"
-        rel="noreferrer"> Takashi Miyazaki</a></p>
+       <a style = {aStyle} href ={bgImg.creditLink}  target="_blank"
+        rel="noreferrer"> {bgImg.creditName}</a></p>
 
       
        
