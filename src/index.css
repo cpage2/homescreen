@@ -11,7 +11,7 @@ body {
 
 }
 
-.sunsrise{
+.sunrise{
   background-image: url('images/sunrise.jpg');
   background-size:105%;
   background-repeat: no-repeat;
@@ -38,9 +38,10 @@ body {
 }
 
 .night{
-  background-image: url('images/campfire.jpg');
+  background-image: url('images/fa.jpg');
   background-size:105%;
   background-repeat: no-repeat;
+  background-position: 0% 40%;
 }
 
 code {
@@ -50,21 +51,39 @@ code {
 
 
 @media (min-width: 800px) and (max-width: 1100px) {
-  body, .midDay, .morning, .night, .sunset, .sunsrise {
+  body, .midDay, .morning, .sunset, .sunrise {
     background-size: 220%;
     background-position:80% 0%;
+  }
+
+  .night{
+    background-size: 350%;
+
+   
   }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-  body, .midDay, .morning, .night, .sunset, .sunsrise  {
+  body, .midDay, .morning, .sunset, .sunrise  {
     background-size: 250% !important;
     background-position:70% 0%;
   }
+
+  .night{
+    background-size: 250% !important;
+    background-position:70% 20%;
+  }
 }
 @media (min-width: 100px) and (max-width: 500px) {
-  body, .midDay, .morning, .night, .sunset, .sunsrise  {
+  body, .midDay, .morning, .sunset, .sunrise  {
     background-size: 370% !important;
     background-position:72% 0%;
   }
+
+  .night{
+    background-size: 200%;
+    background-position: 0% 10%;
+  }
+
+  
 }
