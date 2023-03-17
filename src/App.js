@@ -31,7 +31,7 @@ function App() {
   });
 
 
- //Find out the issue of bg not changing
+ 
   useEffect(() => {
 
     let hour  = 0;
