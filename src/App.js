@@ -39,7 +39,6 @@ function App() {
       let dt = new Date();
       hour = dt.getHours();
      
-     // console.log(hour);
       return hour;
 
     }
@@ -67,7 +66,6 @@ function App() {
         return {classList:"night", creditName:"Farid Askerov", creditLink:"https://unsplash.com/photos/cX6ra6dCtAM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"}
       }
 
-      
    
      
     })
@@ -84,7 +82,7 @@ function App() {
   return (
     //date
     //time
-    //qoute in transparent rectangle
+    
    
     <>
       
@@ -97,11 +95,7 @@ function App() {
       </div>
       
       
-      <div className='qouteBox'>
-          <p id='qoute' style={fontStyle}>“I hope that you never cower from your dark chapters, but highlight them as proof of perseverance, endurance, and strength.”<br></br>
-            ― Kierra C.T. Banks</p>
-      
-      </div>
+  
       
       <footer ><p id='credit' style={fontStyle}>Photo by 
        <a style = {aStyle} href ={bgImg.creditLink}  target="_blank"
