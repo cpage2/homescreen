@@ -1,6 +1,5 @@
 {
   "name": "homescreen",
-  "homepage": "http://cpage2.github.io/homescreen",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
