@@ -1,6 +1,10 @@
 # HomePage (React Practice)
 
-Web home page that shows date/time while changing background images based on time.
+Browser homepage that shows date/time while changing background images based on time.
+
+# Tools
+- React
+- Netlify (hosting)
 
 Live Site: https://react-web-homepage.netlify.app/
 
