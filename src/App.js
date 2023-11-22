@@ -3,13 +3,8 @@ import Moment from 'react-moment';
 import { useState, useEffect} from 'react';
 
 
-
-
-
 function App() {
 
-
-  //style for fonts
   let fontStyle ={
     fontSize: 12,
     color: 'white'
@@ -47,7 +42,7 @@ function App() {
     setBgImg(() => {
      getHour();
       
-    //need to return different credits  
+     
       if((hour > 5) && (hour <= 7)){
 
         return{classList:"sunrise", creditName:"Bailey Zindel", creditLink:"https://unsplash.com/photos/NRQV-hBF10M"};
@@ -70,19 +65,13 @@ function App() {
      
     })
    
-   
-
     document.body.classList.add(bgImg.classList);
     
   }, [bgImg.classList]);
 
 
-  
-
   return (
-    //date
-    //time
-    
+  
    
     <>
       
@@ -95,24 +84,17 @@ function App() {
       </div>
       
       
-  
-      
       <footer ><p id='credit' style={fontStyle}>Photo by 
        <a style = {aStyle} href ={bgImg.creditLink}  target="_blank"
         rel="noreferrer"> {bgImg.creditName}</a></p>
 
-      
        
        </footer>
       </>
 
 
-
   );
 
-
-
-  
 
 }
 
