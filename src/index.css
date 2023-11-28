@@ -56,12 +56,35 @@ code {
     background-position:80% 0%;
   }
 
-  .night{
-    background-size: 350%;
+}
 
+@media (min-width: 900px) and (max-width: 1400px) {
+  .night{
+    background-size: 280%;
    
   }
+  
 }
+
+@media (min-height: 1000px) and (max-height: 1400px) {
+  .night{
+    background-size: 280%;
+    background-position: 10% 10%;
+   
+  }
+  
+}
+
+
+@media (max-width: 600px) {
+  .night {
+    background-size: 290%;
+    background-position:5% 5%;
+   
+  }
+
+}
+
 
 @media (min-width: 500px) and (max-width: 800px) {
   body, .midDay, .morning, .sunset, .sunrise  {
@@ -69,10 +92,7 @@ code {
     background-position:70% 0%;
   }
 
-  .night{
-    background-size: 250% !important;
-    background-position:70% 20%;
-  }
+ 
 }
 @media (min-width: 100px) and (max-width: 500px) {
   body, .midDay, .morning, .sunset, .sunrise  {
@@ -81,7 +101,7 @@ code {
   }
 
   .night{
-    background-size: 200%;
+    background-size: 100%;
     background-position: 0% 10%;
   }
 
